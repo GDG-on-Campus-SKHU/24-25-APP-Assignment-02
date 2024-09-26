@@ -15,4 +15,6 @@
     - 학생은 String, 점수는 int로 선언 
     - 반복문은 forEach 사용하는 것 추천 
   */
-void main() {}
+void main() {
+  print('test');
+}
