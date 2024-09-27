@@ -13,4 +13,8 @@
     - 중복된 값을 허용하지 않는다는 특성을 가진 Set 이용하기 
     - Set.from(변수명)을 사용하여 리스트의 값을 가진 새로운 Set 생성할 수 있다. 
   */
-void main() {}
+void main() {
+  List<int> numlist = [1, 12, 2, 7, 8, 5, 24, 1, 12];
+  var numSet = Set.from(numlist);
+  print('중복이 제거된 리스트 : ${List.from(numSet)}');
+}

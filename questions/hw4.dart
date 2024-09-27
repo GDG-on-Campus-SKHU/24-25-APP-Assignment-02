@@ -14,4 +14,25 @@
     - break 사용하기.
   */ // Weather Enum 정의
 
-void main() {}
+enum Weather { sunny, rainy, cloudy, snowy, }
+void main() {
+  Weather now = Weather.snowy;
+
+  switch(now){
+    case Weather.sunny:
+      print('오늘은 해가 쨍쨍합니다!');
+      break;
+
+    case Weather.rainy:
+      print('오늘은 비가 오는 날씨입니다!');
+      break;
+    
+    case Weather.cloudy:
+      print('오늘은 흐린 날씨입니다!');
+      break;
+
+    case Weather.snowy:
+      print('오늘은 눈이 오는 날씨입니다!');
+      break;
+  };
+}
