@@ -15,4 +15,17 @@
 void main() {
   int evenCount = 0; // 짝수
   int oddCount = 0; // 홀수
+
+  for(var i = 1; i <=25; i++) {
+    if (i % 2 == 0) {
+      evenCount ++;
+    }
+    else {
+      oddCount ++;
+    }
+  }
+
+  print('짝수 개수 : ${evenCount}');
+  print('홀수 개수 : ${oddCount}');
+
 }

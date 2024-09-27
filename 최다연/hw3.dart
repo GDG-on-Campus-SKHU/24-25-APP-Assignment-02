@@ -14,4 +14,7 @@
     - Set.from(변수명)을 사용하여 리스트의 값을 가진 새로운 Set 생성할 수 있다. 
   */
 void main() {
+  List<int> numlist = [1, 12, 2, 7, 8, 5, 24, 1, 12];
+  var numSet = Set.from(numlist);
+  print('중복이 제거된 리스트 : ${List.from(numSet)}');
 }
