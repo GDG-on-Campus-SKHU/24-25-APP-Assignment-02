@@ -1,0 +1,75 @@
+1.
+void main() {
+  int evenCount = 0;  // 짝수 개수
+  int oddCount = 0;   // 홀수 개수
+
+  for(int i=1; i <= 25; i++){
+    if(i % 2==0){
+      evenCount++;
+    }
+    else{
+      oddCount++;
+    }
+  }
+    
+    print('짝수 개수:$evenCount개');
+    print('홀수 개수:$oddCount개');
+  }
+
+2.
+void main() {
+ Map<String, int> scores = {
+   'ALice':90,
+   'Bob':85,
+   'Charlie':88,
+   'James':75,
+   'Tomas':95
+ };
+  
+  String topname='';
+  int topscore = 0;
+  
+  scores.forEach((name, score) {
+    if (score > topscore) {
+     topscore = score;  
+      topname = name;  
+    } }
+) ;
+print('가장 높은 성적은 $topname : $topscore입니다.');
+  }
+
+3.
+void main() {
+  List<int> firstnumbers = [1,12,2,7,8,5,24,1,12];
+  
+  Set<int> secondnumbers = Set.from(firstnumbers);
+  
+
+   print('중복이 제거된 리스트 :$secondnumbers');
+}
+
+
+4.
+enum Weather{
+    sunny,
+    rainy,
+    snowy,
+    cloudy
+  }
+void main() {
+  Weather weather = Weather.snowy;
+  
+  switch(weather){
+    case Weather.sunny:
+      print("오늘은 맑은 날씨입니다!");
+      
+    case Weather.cloudy:
+      print("오늘은 구름 낀 날씨입니다!");
+      
+    case Weather.snowy:
+      print("오늘은 눈이 오는 날씨입니다!");
+    
+    case Weather.rainy:
+      print("오늘은 비가 오는 날씨입니다!");
+  }
+  }
