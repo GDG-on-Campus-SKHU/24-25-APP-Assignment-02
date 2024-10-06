@@ -16,4 +16,23 @@
     - 반복문은 forEach 사용하는 것 추천 
   */
 void main() {
+  Map<String, int> scores = {
+    'Alice': 60,
+    'Bob' : 20,
+    'Charlie' : 60,
+    'David' : 100,
+    'Eden' : 80
+  };
+
+  int bestScore = 0;
+  String bestName = '';
+
+  scores.forEach((key, value) {
+    if(bestScore < value) {
+      bestScore = value;
+      bestName = key;
+      }
+  });
+
+  print('가장 높은 성적은 ${bestName} : ${bestScore}입니다');
 }
